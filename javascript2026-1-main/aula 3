@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <p>Menu 1</p>
+      <p>Menu 2</p>
+      <p>Menu 3</p>
+    </nav>
+  </header>
+  <main>
+    <h2 id="titulo">Aula 3 - Javascript DOM</h2>
+    <p class="comandos">getElementById</p>
+    <p class="comandos">getElementsByTagName</p>
+    <p class="comandos">getElementsByClassName</p>
+    <p>Comandos para pegar os elementos.</p>
+    <p id="ex4">4 - Alterar a cor do id "ex1", do segundo item da classe comandos para a cor verde </p>
+  </main>
+  <div>
+
+  </div>
+  <script>
+    //1
+    document.getElementsByTagName("p")
+    [0].innerHTML = "Item 1";
+    //2
+    document.getElementsByName("p")
+    [1].innerHTML = "Item 2";
+    //3
+    document.getElementsByClassName("comandos")[0].
+      innerHTML = document.getElementsByClassName
+        ("comandos")[1].innerHTML + "()";
+    document.getElementsByClassName("comandos")[1].
+      innerHTML = document.getElementsByClassName
+        ("comandos")[2].innerHTML + "()";
+    document.getElementsByClassName("comandos")[2].
+      innerHTML = document.getElementsByClassName
+        ("comandos")[3].innerHTML + "()";
+    //4
+    document.getElementById("ex1").style.color = "green";
+    document.getElementsByClassName("comandos")[1].
+      style.color = "green"
+  </script>
+</body>
+
+</html>
